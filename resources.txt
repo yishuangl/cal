@@ -1,0 +1,34 @@
+Apps
+ - bConnected: https://bconnected.berkeley.edu/
+ - bMail: http://bmail.berkeley.edu/
+
+School
+ - BearFacts:
+ - FinAid
+ - CalCentral:
+ - library: http://www.lib.berkeley.edu/node
+ - oskicat: http://oskicat.berkeley.edu/
+ - academic calendar: calendar import?
+ - school bookstore
+ - Career center
+
+Class
+ - bCourses: http://bcourses.berkeley.edu/
+ - OCF: https://www.ocf.berkeley.edu/
+ - piazza
+
+Registration
+ - TeleBears: https://telebears.berkeley.edu/
+ - Online class schedule
+ - class catalog
+ - ScheduleBuilder
+
+Life
+ - Cal 1 Card
+ - AirBears (key and stuff)
+ - Dining
+ - Tang center
+ - Transit
+
+Other Recourses
+ - free software: https://software.berkeley.edu/
