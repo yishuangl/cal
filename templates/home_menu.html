@@ -1,29 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title> All about Cal</title>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-</head>
-<body>
-    <div class="container">
-      <h1>Search</h1>
-      <form action="." method="POST">
-          <input type="text" name="text">
-          <input type="submit" name="search" value="Search">
-      </form>
-    </div>
-    <div class="container">
-      <table>
-        <tr>
-          <th> Item </th>
-        </tr>
+{% extends "home.html" %}
+{% block content %}
+  <table>
+    <tr>
+      <th> Item </th>
+    </tr>
 
-        {% for item in items %}
-          <tr> <td> {{ item }} </td> <tr>
-        {% endfor %}
+    {% for item in items %}
+      <tr> <td> {{ item }} </td> <tr>
+    {% endfor %}
 
-      </table>
-    </div>
-</body>
-</html>
+  </table>
+{% endblock %}
