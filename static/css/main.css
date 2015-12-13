@@ -12,7 +12,7 @@
 
 .jumbotron {
   background-image:url('http://www.thesfnews.com/wp-content/uploads/2015/07/sather_gate_night.png');
-  height: 400px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -35,7 +35,7 @@
 }
 
 .learn-more {
-  background-color: #f7f7f7;
+  background-color: #FFFFFF;
 }
 
 .learn-more h3 {

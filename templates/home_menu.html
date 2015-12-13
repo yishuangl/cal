@@ -13,5 +13,17 @@
           <input type="submit" name="search" value="Search">
       </form>
     </div>
+    <div class="container">
+      <table>
+        <tr>
+          <th> Item </th>
+        </tr>
+
+        {% for item in items %}
+          <tr> <td> {{ item }} </td> <tr>
+        {% endfor %}
+
+      </table>
+    </div>
 </body>
 </html>
