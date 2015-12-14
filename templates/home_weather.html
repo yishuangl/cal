@@ -1,4 +1,13 @@
 {% extends "home.html" %}
 {% block content %}
-  <p>{{ string }}</p>
+<table>
+  <tr>
+    <th> Weather at Berkeley today</th>
+  </tr>
+
+  {% for item in list %}
+    <tr> <td> {{ item }} </td> <tr>
+  {% endfor %}
+
+</table>
 {% endblock %}

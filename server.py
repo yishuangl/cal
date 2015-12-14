@@ -56,31 +56,29 @@ def home():
 @app.route('/', methods=['POST'])
 def search_post():
     text = request.form['text'].lower()
-    string = search_engine.change(text)
+
     # search DH menus
     if text in m:
         #to-do: can only search non-duplicates
         menu = search_engine.get_menu_items(m[text])
-        return render_template('home_menu.html', items = menu)
+        return render_template('home_menu.html', items = menu, name=text)
 
     # search library hours
     for l in libraries:
-        if text in l.lower():
+        if text in l:
             hour = search_engine.get_library_hour(text)
             return render_template('home_lib.html', text=hour)
 
     # search local current weather
     if text == "weather":
         weather = search_engine.get_weather()
-        return render_template('home_weather.html', string = weather)
-    return render_template('home_test.html')
+        return render_template('home_weather.html', list = weather)
+
+    return render_template('home_default.html')
+
 
 if __name__ == '__main__':
     app.run(debug = True)
-
-
-
-
-
-
-# hold on
+#to-do: pre-load the information before search to save time
+#to-do: push to live
+#to-do: use API Central to create personalized information search

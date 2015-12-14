@@ -60,7 +60,14 @@ def get_weather():
     page = requests.get(url)
     info = page.json()
     temp = (info['main']['temp'] - 273.15) * 1.8 + 32
-    return int(temp)
+    temp_min = (info['main']['temp_min'] - 273.15) * 1.8 + 32
+    temp_max = (info['main']['temp_max'] - 273.15) * 1.8 + 32
+    summary = info['weather'][0]['main']
+    description = info['weather'][0]['description']
+    return ["Current temperature: {0}°F".format(int(temp)),
+            "Lowest: {0}°F".format(int(temp_min)),
+            "Highest: {0}°F".format(int(temp_max)),
+            "Weather: {0} ({1})".format(summary, description)]
 
 def get_library_hour(library):
     page = requests.get(LIBRARY_URL)
