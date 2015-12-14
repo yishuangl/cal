@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <title> All about Cal</title>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-    <div class="container">
-      <h1>Search</h1>
-      <form action="." method="POST">
-          <input type="text" name="text">
-          <input type="submit" name="search" value="Search">
+  <div class="container">
+    <div class="search">
+      <p>Ask me anything about Cal!<p>
+      <form class="inner" action="." method="POST">
+          <input type="text" name="text" placeholder="Search...">
+          <input class ="btn" type="submit" name="search" value="Search">
       </form>
     </div>
-    <div class="container">
+    <div class="result">
       {% block content %}{% endblock %}
     </div>
+  </div>
 </body>
 </html>
