@@ -14,4 +14,4 @@ To-do:
   - Authenticated search (using UCB API center)
 - Front-end optimization
 - Mobile site or mobile app
-- See comments in the file
+- See addtional comments in the file
