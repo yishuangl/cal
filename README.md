@@ -15,3 +15,5 @@ To-do:
 - Front-end optimization
 - Mobile site or mobile app
 - See addtional comments in the file
+
+
